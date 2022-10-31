@@ -22,8 +22,8 @@ function Contact({}: Props) {
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10 mt-20">
-        <h4 className="text-xl md:text-2xl font-semibold text-center">
+      <div className="flex flex-col space-y-10 mt-12 md:mt-20">
+        <h4 className="text-xl md:text-2xl sm:mt-12 font-semibold text-center">
           I have got just what you need.{' '}
           <span className="decoration-[#F46530]/50 underline">Let's talk</span>
         </h4>
@@ -45,7 +45,7 @@ function Contact({}: Props) {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-[400px] md:w-fit mx-auto"
         >
           <div className="flex space-x-2">
             <input
@@ -74,7 +74,7 @@ function Contact({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#fbc3bc] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#fbc3bc] py-4 px-3 md:py-5 md:px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>

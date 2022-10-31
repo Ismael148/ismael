@@ -19,7 +19,7 @@ function About({ pageInfo }: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col sm:mt-20 relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="text-lg md:text-2xl absolute top-24  uppercase tracking-[20px] text-gray-500">
         About
@@ -39,16 +39,16 @@ function About({ pageInfo }: Props) {
         }}
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-48 h-48 my-20 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-48 h-48 my-20 mt-10 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
       />
 
-      <div className="mt-12 space-y-10 px-0 md:px-10">
-        <h4 className="text-3xl font-semibold">
+      <div className="space-y-10 px-0 md:px-10">
+        <h4 className="text-xl md:text-3xl font-semibold mt-0 md:mt-12">
           Here is a{' '}
           <span className="underline decoration-[#F46530]">little</span>{' '}
           background
         </h4>
-        <p className="text-base">
+        <p className="text-xs md:text-base">
           {' '}
           `A geek is above all a passionate person`😎 <br /> The logical mind,
           Listening, The thirst for learning, <br /> Autonomy,The community.
