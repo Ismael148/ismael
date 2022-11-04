@@ -24,9 +24,9 @@ function Skill({ skill, directionLeft }: Props) {
           x: 0,
         }}
         src={urlFor(skill?.image).url()}
-        className="rounded-full border border-gray-500 object-cover w-14 h-14  xl:w-16 xl:h-16 filter group-hover:grayscale transition duration-300 ease-in-out"
+        className="rounded-full border border-gray-500 object-cover sm:h-12 sm:w-12 md:w-14 h-14  lg:w-16 lg:h-16 filter group-hover:grayscale transition duration-300 ease-in-out"
       />
-      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-14 w-14 md:w-14 md:h-14 xl:w-16 xl:h-16 rounded-full z-0">
+      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white sm:h-12 sm:w-12 md:w-14 md:h-14 xl:w-16 xl:h-16 rounded-full z-0">
         <div className="flex items-center justify-center h-full">
           <p className="text-xl font-bold text-black opacity-100">
             {skill.progress}%

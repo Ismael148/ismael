@@ -17,29 +17,29 @@ function Contact({}: Props) {
   };
 
   return (
-    <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="text-lg md:text-2xl absolute top-24  uppercase tracking-[20px] text-gray-500">
+    <div className="h-screen mb-20 relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+      <h3 className="sm:text-xs text-lg md:text-2xl absolute top-24  uppercase tracking-[20px] text-gray-500">
         Contact
       </h3>
 
       <div className="flex flex-col space-y-10 mt-12 md:mt-20">
-        <h4 className="text-xl md:text-2xl sm:mt-12 font-semibold text-center">
+        <h4 className="sm:text-xs md:text-2xl sm:mt-20 font-semibold text-center">
           I have got just what you need.{' '}
           <span className="decoration-[#F46530]/50 underline">Let's talk</span>
         </h4>
 
         <div className="space-y-5">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#F46530] h-6 w-6 animate-pulse" />
-            <p>+261 34 94 527 02</p>
+            <PhoneIcon className="text-[#F46530] sm:w-4 sm:h-4 md:h-6 md:w-6 animate-pulse" />
+            <p className='sm:text-xs'>+261 34 94 527 02</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F46530] h-6 w-6 animate-pulse" />
-            <p>zolalainaismael@gmail.com</p>
+            <EnvelopeIcon className="text-[#F46530] sm:w-4 sm:h-4 md:h-6 md:w-6 animate-pulse" />
+            <p className='sm:text-xs'>zolalainaismael@gmail.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F46530] h-6 w-6 animate-pulse" />
-            <p>Antananarivo, 101</p>
+            <MapPinIcon className="text-[#F46530] sm:w-4 sm:h-4 md:h-6 md:w-6 animate-pulse" />
+            <p className='sm:text-xs'>Antananarivo, 101</p>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ function Contact({}: Props) {
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col space-y-2 w-[400px] md:w-fit mx-auto"
         >
-          <div className="flex space-x-2">
+          <div className="flex sm:flex-col sm:space-y-2 sm:w-80 sm:m-auto md:w-full md:flex-row md:space-x-2">
             <input
               {...register('name')}
               placeholder="Name"
@@ -74,7 +74,7 @@ function Contact({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#fbc3bc] py-4 px-3 md:py-5 md:px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#fbc3bc] sm:m-auto py-4 px-3 md:py-5 md:px-10 sm:w-80 sm:h-16 md:w-full rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>
